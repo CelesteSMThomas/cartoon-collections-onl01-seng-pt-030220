@@ -22,18 +22,10 @@ end
 
 
 
-def long_planeteer_calls(arr)
-result = false
- arr.each do |name|
-    if arr.include?(name.length >= 4)
-      result = true
-    else
-      result = false
-    end 
-  result
+def long_planeteer_calls(planeteer_calls)
+  planeteer_calls.any? do |call| call.length > 4
   end
 end
-
 
 
 
