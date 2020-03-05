@@ -30,7 +30,7 @@ result = false
     else
       result = false
     end 
-    puts result
+  result
   end
 end
 
