@@ -22,12 +22,28 @@ end
 
   def find_the_cheese(array)
     cheeses = ["cheddar", "gouda", "thyme"]
-    i = 0
-    array.find do |element| element == cheeses[i]
-      i +=1
+    snack = nil
+   array.each do |cheese|
+    cheeses.include?(cheese)
+    if cheeses.include?(cheese)
+      snack = cheese
     end
   end
+    snack
+  end
 
+
+#   def find_the_cheese(snacks)
+#   cheese_types = ["cheddar", "gouda", "camembert"]
+#   snack = nil
+#   snacks.each do |food| 
+#     cheese_types.include?(food) 
+#     if cheese_types.include?(food)
+#       snack = food
+#     end
+#   end
+#   snack
+# end
 
 
 
